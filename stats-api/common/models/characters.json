@@ -1,0 +1,32 @@
+{
+  "name": "characters",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": false
+  },
+  "properties": {
+    "character_id": {
+      "type": "String",
+	  "mysql": {
+		"columnName": "character_id",
+		"dataType": "BIGINT",
+		"dataLength": 20,
+		"nullable": "N"
+      },
+	  "generated":false,
+	  "id": true
+	  
+    },
+    "name": {
+      "type": "String"
+    },
+    "faction_id": {
+      "type": "Number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
+

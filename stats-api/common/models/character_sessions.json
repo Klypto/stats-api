@@ -1,0 +1,37 @@
+{
+  "name": "character_sessions",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": false
+  },
+  "properties": {
+    "character_id": {
+      "type": "String",
+	  "required": true,
+	  "mysql": {
+		"columnName": "character_id",
+		"dataType": "BIGINT",
+		"dataLength": 20,
+		"nullable": "N"
+      },
+	  "id": 1
+    },
+    "login": {
+      "type": "number",
+	  "id": 2
+    },
+	"login_missed": {
+      "type": "boolean"
+    },
+    "logout": {
+      "type": "number"
+    },
+	"logout_missed": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,23 @@
+{
+  "name": "weapons",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": false
+  },
+  "properties": {
+    "item_id": {
+      "type": "number",
+	  "id": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "faction_id": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

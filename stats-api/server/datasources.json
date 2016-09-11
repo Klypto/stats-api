@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "maindb": {
+    "name": "maindb",
+    "connector": "mysql",
+	"host": "127.0.0.1",
+    "port": 3306,
+    "database": "klyptotech",
+    "username": "kscore",
+    "password": "WHATEVERYOUWANTBABY!",
+	"supportBigNumbers": true
+  }
+}

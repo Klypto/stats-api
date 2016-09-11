@@ -1,0 +1,44 @@
+{
+  "initial:before": {
+    "loopback#favicon": {}
+  },
+  "initial": {
+    "compression": {},
+    "cors": {
+      "params": {
+        "origin": true,
+        "credentials": true,
+        "maxAge": 86400
+      }
+    }
+  },
+  "session": {},
+  "auth": {},
+  "parse": {},
+  "routes": {
+    "loopback#rest": {
+      "paths": [
+        "${restApiRoot}"
+      ]
+    }
+  },
+  "routes:after": {
+	"loopback#rest": {
+		"params": {
+			"limit": 1,
+			"interval": 60000,
+			"keys": {
+			  "ip": 50,
+			  "user": {"template": "user-${user.id}", "limit": 200}
+			}
+		}
+	}
+  },
+  "files": {},
+  "final": {
+    "loopback#urlNotFound": {}
+  },
+  "final:after": {
+    "loopback#errorHandler": {}
+  }
+}
