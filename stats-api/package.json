@@ -1,0 +1,9 @@
+{
+  "name": "stats-api",
+  "version": "0.0.0",
+  "description": "stats-api",
+  "main": "app.js",
+  "author": {
+    "name": "Main"
+  }
+}
